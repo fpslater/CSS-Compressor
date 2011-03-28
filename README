@@ -1,0 +1,59 @@
+A Ruby class that opens a CSS file, and does a simple
+
+compression of it by removing all the blank lines, and lines
+
+that are only comments.
+
+ 
+
+  css_compressor = CSSCompressor.new(filename)
+
+  css_compressor.compress_to(destination_filename)
+
+ 
+
+Given file contents that look like this...
+
+ 
+
+/* reset a few things */
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+ 
+
+/* for the main content div */
+
+#content {
+
+  margin: 10px
+
+}
+
+ 
+
+It should compress down to...
+
+ 
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+#content {
+
+  margin: 10px
+
+}
+
+ 
