@@ -15,7 +15,6 @@ that are only comments.
 Given file contents that look like this...
 
  
-
 /* reset a few things */
 
 body {
@@ -41,19 +40,10 @@ body {
 It should compress down to...
 
  
-
 body {
-
   margin: 0;
-
   padding: 0;
-
 }
-
 #content {
-
   margin: 10px
-
 }
-
- 
