@@ -17,7 +17,6 @@ class CSSCompressor
 	oldcontents << line 
 	oldcontents << "\n" if line.size > 0 and !line.include? "}"
     end
-
     newcontents = ""
     # Break up contents by css code blocks and remove all comments
     oldcontents.split('}').each do |block|
@@ -26,8 +25,4 @@ class CSSCompressor
     end
     File.open(destination_filename, 'w') {|f| f.write(newcontents) }
   end
-
-
- 
-
 end
