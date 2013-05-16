@@ -12,7 +12,7 @@ that are only comments.
 
  
 
-<b>Given file contents that look like this...</b>
+Given file contents that look like this...
 
  
 /* reset a few things */
@@ -36,8 +36,7 @@ body {
 }
 
  
-
-<b>It should compress down to...</b>
+It should compress down to...
 
  
 body {
